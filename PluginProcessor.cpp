@@ -257,3 +257,8 @@ void SamplePitchProcessor::setStateInformation (const void* data, int size)
     if (path.isNotEmpty() && juce::File (path).existsAsFile())
         loadSampleFile (juce::File (path), false);
 }
+
+juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
+{
+    return new SamplePitchProcessor();
+}
