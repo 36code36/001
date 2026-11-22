@@ -24,9 +24,9 @@ juce_add_plugin(SamplePitcher
     PRODUCT_NAME "Sample Pitcher")
 
 target_sources(SamplePitcher PRIVATE
-    Source/Analyzer.cpp
-    Source/PluginProcessor.cpp
-    Source/PluginEditor.cpp)
+    Analyzer.cpp
+    PluginProcessor.cpp
+    PluginEditor.cpp)
 
 target_compile_definitions(SamplePitcher PUBLIC
     JUCE_WEB_BROWSER=0
